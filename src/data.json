@@ -1,0 +1,148 @@
+{
+    "personal": {
+        "name": "Tarık",
+        "surname": "Tekin",
+        "role": "Senior ABAP Developer",
+        "email": "tariktekin8@gmail.com",
+        "bio": "An ABAP developer with 9 years of hands-on experience. EWM, TM Enthusiast. Constantly working to improve.",
+        "footerText": "Tarık Tekin"
+    },
+    "social": [
+        {
+            "name": "LinkedIn",
+            "url": "https://www.linkedin.com/in/tariktekin8/"
+        },
+        {
+            "name": "GitHub",
+            "url": "https://github.com/tariktekin8"
+        }
+    ],
+    "navigation": [
+        "Home",
+        "Experience",
+        "Projects",
+        "Skills",
+        "Education",
+        "Contact"
+    ],
+    "experience": [
+        {
+            "id": 1,
+            "role": "Freelance Senior ABAP Developer, EWM & TM Technical Consultant",
+            "company": "Self-Employed",
+            "period": "2025 - Present",
+            "description": ""
+        },
+        {
+            "id": 2,
+            "role": "Chief EWM & TM Team Lead",
+            "company": "Solvia Digital Solutions",
+            "period": "2025 - Present",
+            "description": ""
+        },
+        {
+            "id": 3,
+            "role": "Principal EWM & TM Developer",
+            "company": "Solvia Digital Solutions",
+            "period": "2023 - 2025",
+            "description": ""
+        },
+        {
+            "id": 4,
+            "role": "Project Development Team Lead",
+            "company": "NTT Data Business Solutions Türkiye",
+            "period": "2021 - 2023",
+            "description": ""
+        },
+        {
+            "id": 5,
+            "role": "Senior ABAP Developer",
+            "company": "NTT Data Business Solutions Türkiye",
+            "period": "2019 - 2021",
+            "description": ""
+        },
+        {
+            "id": 6,
+            "role": "ABAP Developer",
+            "company": "Koçsistem Bilgi ve İletişim Hizmetleri A.Ş.",
+            "period": "2016 - 2019",
+            "description": ""
+        }
+    ],
+    "education": [
+        {
+            "id": 1,
+            "degree": "Bachelor of Computer Science",
+            "institution": "Kocaeli University",
+            "period": "2014 - 2018",
+            "description": ""
+        }
+    ],
+    "projects": [
+        {
+            "id": 1,
+            "title": "Arçelik S/4HANA Conversation Project",
+            "role": "EWM Development Technical Lead",
+            "description": "Led the migration of a warehouse management system to EWM Decentralized. Optimized inbound and outbound processes using RFUI and PPF. Enhanced custom picking and putaway strategies.",
+            "technologies": [
+                "EWM",
+                "RFUI"
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Yaşar Holding S/4HANA Project",
+            "role": "TM Development Technical Lead",
+            "description": "Led the migration of a transportation management system. Customized standard screens. Enhanced custom reports, calculation bases, charge calculations and distributions. Integrated system with a third-party system to generate transportation lanes based on TM locations.",
+            "technologies": [
+                "TM",
+                "BOPF",
+                "PPF",
+                "FPM"
+            ]
+        },
+        {
+            "id": 3,
+            "title": "KRKA S/4HANA Conversation Project",
+            "role": "EWM Developer",
+            "description": "Enhanced custom RFUI applications and implemented custom features to EWM Monitor and PRDO.",
+            "technologies": [
+                "EWM",
+                "RFUI"
+            ]
+        }
+    ],
+    "skills": [
+        {
+            "category": "ABAP",
+            "items": [
+                "Object Oriented ABAP",
+                "Core Data Services",
+                "Smart Forms",
+                "Adobe Forms",
+                "IDoc",
+                "OData",
+                "SOAP",
+                "REST APIs"
+            ]
+        },
+        {
+            "category": "EWM & TM",
+            "items": [
+                "BOPF",
+                "PPF",
+                "RFUI",
+                "FPM",
+                "BRF+"
+            ]
+        },
+        {
+            "category": "Tools",
+            "items": [
+                "Git",
+                "Jira",
+                "Confluence"
+            ]
+        }
+    ]
+}

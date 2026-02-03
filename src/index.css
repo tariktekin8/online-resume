@@ -1,0 +1,223 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+
+:root {
+  /* Color Palette - Premium HSL Scheme */
+  --color-bg: 240 10% 3.9%;
+  /* Very dark background */
+  --color-card: 240 10% 8%;
+  /* Slightly lighter for cards */
+  --color-text: 0 0% 98%;
+  /* Almost white text */
+  --color-text-muted: 240 5% 64.9%;
+
+  /* Accents */
+  --color-primary: 262 83% 58%;
+  /* Vibrant Purple/Violet */
+  --color-secondary: 199 89% 48%;
+  /* Cyan/Blue */
+  --color-accent: 327 78% 55%;
+  /* Pinkish */
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, hsl(var(--color-primary)) 0%, hsl(var(--color-secondary)) 100%);
+  --gradient-text: linear-gradient(to right, hsl(var(--color-text)), hsl(var(--color-text-muted)));
+
+  /* Spacing */
+  --spacing-section: 6rem;
+  --spacing-container: 1200px;
+
+  /* Glassmorphism */
+  --glass-bg: hsla(240, 10%, 8%, 0.7);
+  --glass-border: hsla(0, 0%, 100%, 0.1);
+  --blur: 12px;
+
+  /* Typography */
+  --font-sans: 'Outfit', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+}
+
+[data-theme="light"] {
+  --color-bg: 0 0% 98%;
+  /* White-ish */
+  --color-card: 0 0% 93%;
+  /* Light Gray */
+  --color-text: 240 10% 3.9%;
+  /* Very Dark (opp of dark bg) */
+  --color-text-muted: 240 5% 40%;
+  /* Darker Gray */
+
+  --glass-bg: hsla(0, 0%, 100%, 0.7);
+  --glass-border: hsla(240, 10%, 3.9%, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(var(--color-bg));
+  color: hsl(var(--color-text));
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  cursor: default;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Utilities */
+.container {
+  max-width: var(--spacing-container);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section {
+  padding: var(--spacing-section) 0;
+}
+
+.text-gradient {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--blur));
+  -webkit-backdrop-filter: blur(var(--blur));
+  border: 1px solid var(--glass-border);
+  border-radius: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  font-family: var(--font-sans);
+}
+
+.btn-primary {
+  background: var(--gradient-primary);
+  color: white;
+  box-shadow: 0 4px 15px hsla(var(--color-primary), 0.4);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px hsla(var(--color-primary), 0.5);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid hsl(var(--color-primary));
+  color: hsl(var(--color-text));
+}
+
+.btn-outline:hover {
+  background: hsl(var(--color-primary));
+  color: white;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--color-bg));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--color-card));
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--color-primary));
+}
+
+/* ============================================
+   RESPONSIVE DESIGN - MEDIA QUERIES
+   ============================================ */
+
+/* Tablet and below */
+@media (max-width: 1024px) {
+  :root {
+    --spacing-section: 4rem;
+  }
+
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  :root {
+    --spacing-section: 3rem;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .section {
+    padding: 3rem 0;
+  }
+
+  /* Typography adjustments */
+  h1 {
+    font-size: 2.5rem !important;
+  }
+
+  h2 {
+    font-size: 2rem !important;
+  }
+
+  h3 {
+    font-size: 1.25rem !important;
+  }
+
+  /* Button adjustments */
+  .btn {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem !important;
+  }
+
+  h2 {
+    font-size: 1.75rem !important;
+  }
+
+  .btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+  }
+}
